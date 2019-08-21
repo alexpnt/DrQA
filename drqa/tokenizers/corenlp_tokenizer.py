@@ -97,7 +97,7 @@ class CoreNLPTokenizer(Tokenizer):
 
         # Skip to start of output (may have been stderr logging messages)
         output = self.corenlp.before
-        start = output.find(b'{"sentences":')
+        start = output.find(b'{\r\n  "sentences":')
         output = json.loads(output[start:].decode('utf-8'))
 
         data = []

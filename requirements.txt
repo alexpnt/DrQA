@@ -8,3 +8,6 @@ scipy
 nltk
 elasticsearch
 pexpect==4.2.1
+spacy
+torch==1.2.0+cpu
+torchvision==0.4.0+cpu
